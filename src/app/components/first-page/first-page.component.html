@@ -1,0 +1,43 @@
+<div class="container my-container-color">
+  <div class="row mt-5">
+    <div class="col margin-auto text-center">
+      <img src="assets/img/lets_play.png" alt="" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col margin-auto text-center">
+      <form class="margin-auto">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            required
+            placeholder="Enter your Name"
+            #name
+          />
+          <span class="error" *ngIf="invalid">Please enter your name</span>
+        </div>
+
+        <div class="text-center margin-auto">
+          <mat-spinner
+            class="margin-auto"
+            mode="indeterminate"
+            color="orange"
+            diameter="40"
+            *ngIf="loading"
+          >
+          </mat-spinner>
+        </div>
+        <button
+          type="button"
+          class="btn"
+          (click)="onSubmit(name.value)"
+          *ngIf="!loading"
+        >
+          Let's begin
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

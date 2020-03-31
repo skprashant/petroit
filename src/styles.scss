@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+.margin-auto {
+  margin: 0 auto;
+}
+
+form {
+  width: 400px;
+}
+
+.form-control {
+  border: 1px solid black !important;
+  border-radius: 0px;
+}
+
+button {
+  background-color: black !important;
+  width: 400px;
+  border-radius: 0px;
+  color: #fff !important;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: black !important;
+}
+
+.error {
+  background-color: rgb(238, 97, 97);
+  display: block;
+  text-align: start;
+  padding: 5px 12px 5px 12px;
+}
+
+.mat-dialog-container {
+  background-color: rgb(228, 164, 86) !important;
+}
